@@ -1,4 +1,4 @@
-# HeartAttackPrediction
+# Heart Attack Prediction
 # 심장병 예측 프로그램
 
 이 프로젝트는 AVR 보드를 활용하여 심장병 여부를 예측하는 프로그램입니다. 사용자로부터 환자의 데이터를 입력받아 심장병 여부를 진단합니다.
@@ -14,6 +14,8 @@
 2. AVR 보드를 연결하고, 통신 프로그램을 실행하여 진단 결과를 확인합니다.
 
 ## 프로젝트 구성
+- `convert_svm.py` : svm 예제 코드
+- 
 - `model.py`: 심장병 예측 모델
 - `data/`: Kaggle 데이터셋
 - `README.md`: 프로젝트 설명

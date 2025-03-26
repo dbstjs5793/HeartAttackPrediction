@@ -16,7 +16,7 @@
 ## 프로젝트 구성
 - `convert_svm.py` : svm 예제 코드
 - 
-- `model.py`: 심장병 예측 모델
+- `heart_model_poly.h`: 심장병 예측 모델
 - `data/`: Kaggle 데이터셋
 - `README.md`: 프로젝트 설명
 

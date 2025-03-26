@@ -1,0 +1,50 @@
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <math.h>
+
+float compute_kernel(float* x, float data1, float data2)
+{
+    float kernel = 0.0;
+    kernel += x[0] * data1;
+    kernel += x[1] * data2;
+
+    return kernel;
+}
+
+int predict(float* x) {
+    float kernels[3] = { 0 };
+    kernels[0] = compute_kernel(x, 1.0, 1.0);
+    kernels[1] = compute_kernel(x, 2.0, 3.0);
+    kernels[2] = compute_kernel(x, 3.0, 2.0);
+    float decision = -1.6;
+    decision = decision - (+kernels[0] * -0.2 + kernels[1] * -0.8);
+    decision = decision - (+kernels[2] * 1.0);
+
+    return decision > 0 ? 0 : 1;
+}
+
+const char* idxToLabel(uint8_t classIdx) {
+    switch (classIdx) {
+    case 0:
+        return "0";
+    case 1:
+        return "1";
+    default:
+        return "Houston we have a problem";
+    }
+}
+
+const char* predictLabel(float* x) {
+    return idxToLabel(predict(x));
+}
+
+int main()
+{
+        float x_sample[] = { -1,2 };
+        printf("%s", predictLabel(x_sample));
+    return 0;
+}
+*/

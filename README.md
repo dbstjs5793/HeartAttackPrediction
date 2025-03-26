@@ -1,4 +1,4 @@
-# HeartDiseasePrediction
+# HeartAttackPrediction
 # 심장병 예측 프로그램
 
 이 프로젝트는 AVR 보드를 활용하여 심장병 여부를 예측하는 프로그램입니다. 사용자로부터 환자의 데이터를 입력받아 심장병 여부를 진단합니다.

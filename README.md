@@ -20,7 +20,7 @@
   
  - AVR보드와 UART 통신을 하기 위해 C++ code로 convert한 후, C로 수정해줘야함
 
-## 프로젝트를 위한 기본 예제 구성
+## method2 기본 예제
 
 ### 전체 흐름도
 1. Python에서 svm train
@@ -48,14 +48,26 @@
   <img src="https://github.com/user-attachments/assets/5e90537e-8ddb-42bc-8c3b-b79d14566197" width="500">
 
 
-## 프로젝트 구성
-### 실행 방법
-1. Kaggle에서 데이터셋을 다운로드
-2. Scikit-learn 라이브러리를 활용하여 SVM 모델 생성
-3. UART 통신을 통해 예
-4. AVR 보드를 연결하고, 통신 프로그램을 실행하여 진단 결과를 확인합니다.
+## 심장병 예측 프로젝트
 
-### 프로젝트에서 사용한 코드
+### 전체 흐름도
+1. Python에서 svm train
+2. Micromlgen librar로 C++ code로 convert
+3. C++로 convert된 함수를C로다듬기
+4. UART 통신을 통해 환자의 데이터(predict data) 전송
+5. AVR 에서 test => Output 출력
+
+    <img src="https://github.com/user-attachments/assets/74fac48d-7d01-47f6-a5b2-0ec5f9e8bd3b" width="500">
+
+### Datasets
+<img src="https://github.com/user-attachments/assets/bc21c538-321c-4158-8fa6-43ba957f733f" width="500">
+<br>
+<img src="https://github.com/user-attachments/assets/7b9d21ba-f7aa-4be4-9795-ba5c02cf9f4a" width="400">
+<br>
+<img src="https://github.com/user-attachments/assets/8a053fb7-da5e-4d59-a76c-eae31628c0f0" width="400">
+
+
+### 프로젝트 코드
 - `heart_model_poly.h`: 심장병 예측 모델
 - `data/`: Kaggle 데이터셋
 - `README.md`: 프로젝트 설명

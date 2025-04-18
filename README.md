@@ -15,6 +15,7 @@
 <img src="https://github.com/user-attachments/assets/153e74a2-2aa6-4072-95fe-a22f9e3e4898" width="300"><br>
 
  - 본 프로젝트에서는 method2를 사용하므로 사용할 데이터셋이 Libsvm 포멧이면 sklearn-svm의 포멧으로 변환해줘야함
+ - 페이지 하단의 `method2 기본 예제`를 참고하여 프로젝트를 수행함
    
    <img src="https://github.com/user-attachments/assets/455b0222-e941-482e-9ca6-508791ad1dee" width="400"><br><br><br><br><br>
 
@@ -42,7 +43,7 @@
 ### 3. 커널 선택
 #### A. Source Code<br>
 - 아래 코드를 커널별로 진행<br>
-  <img src="https://github.com/user-attachments/assets/02b2bf25-b935-48db-afc9-b8ff61c736db" width="400"><br><br>
+  <img src="https://github.com/user-attachments/assets/02b2bf25-b935-48db-afc9-b8ff61c736db" width="400"><br>
 #### B. Data
 - poly kernel 에서의 정확도가 약 `0.87`로 가장 높으므로 `poly`를 사용하여 모델링한다.<br>
 <img src="https://github.com/user-attachments/assets/74a8cc4d-2934-467c-b80c-ee632aecba29" width="300"><br><br><br>
@@ -71,8 +72,12 @@
 
 ### 5. 결과<br>
 #### 5-1. Data<br>
-![image](https://github.com/user-attachments/assets/c10c7b7d-bdf5-45c6-a971-f5beba65aeab)
-![image](https://github.com/user-attachments/assets/a5e051db-1dff-4653-bd67-a2bad8e35f04)
+-  Input data ( label 0 ) = `55`, `1`, `0`, `132`, `353`, `0`, `1`, `132`, `1`, `1.2(반올림->1)`, `1`, `1`, `3`
+  -> Led Blink, siren sound, FND ‘risk’, PuTTY에 해당 문구가 출력되는 것을 확인하였다.
+   ![image](https://github.com/user-attachments/assets/c10c7b7d-bdf5-45c6-a971-f5beba65aeab)
+- Input data ( label 1 ) = `45`, `0`, `0`, `138`, `236`, `0`, `0`, `152`, `1`, `0.2(반올림->0)`, `1`, `0`, `2`
+  Led ON, safe sound, FND ‘safe’, PuTTY에 해당 문구가 출력되는 것을 확인하였다.
+  ![image](https://github.com/user-attachments/assets/a5e051db-1dff-4653-bd67-a2bad8e35f04)<br><br><br><br><br>
 
 
 

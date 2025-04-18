@@ -1,0 +1,22 @@
+from micromlgen import port
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+import numpy as np
+classifier = SVC(kernel = 'poly', gamma = 0.001)
+##load datasetle name
+filename = 'heart.csv'
+datafile = np.loadtxt(filename, delimiter = ',', dtype=np.float32)
+##delete last column : last col is label.(not data)
+training_points = datafile[:,:13]
+##load only last col data : label
+labels = np.loadtxt(filename, delimiter = ',', usecols=13, dtype=np.int32)
+classmap = {}
+classifier.fit(training_points, labels)
+classmap[0] = 0
+classmap[1] = 1
+#code covert python to C
+c_code = port(classifier, classmap=classmap)
+print(c_code)
+#save C code
+with open("heart_model_poly.h", "w") as f:
+    f.write(c_code)

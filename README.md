@@ -64,7 +64,8 @@
 ↳ ...위 4-2에서 C로 변환해준 함수 이하 생략<br><br><br>
 <img src="https://github.com/user-attachments/assets/058cb28e-2149-482f-a8d5-c1bf2a84db3b" width="350"><br>
 `[2]`<br><br>
-<img src="https://github.com/user-attachments/assets/12eb상
+
+### 시연 영상
 https://youtu.be/PAsGe0pY-cw
 
 ### 참고 사이트

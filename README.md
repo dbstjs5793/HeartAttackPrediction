@@ -65,14 +65,20 @@
 <img src="https://github.com/user-attachments/assets/058cb28e-2149-482f-a8d5-c1bf2a84db3b" width="350"><br>
 `[2]`<br><br>
 
+---  
+
 ### 시연 영상
 https://youtu.be/PAsGe0pY-cw
+
+---  
 
 ### 참고 사이트
 - Kaggle : https://archive.ics.uci.edu/dataset/45/heart+disease
 - Add jetbrain edu : https://www.jetbrains.com/pycharm-edu/
 - Download pycharm : https://www.jetbrains.com/pycharm/
 - Download anaconda : https://www.anaconda.com/docs/getting-started/anaconda/install<br><br>
-  
+
+---  
+
 ## 라이선스
 MIT License
